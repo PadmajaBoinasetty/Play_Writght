@@ -16,7 +16,7 @@ test.describe("all negative scenarios", () => {
         test("login without username and password ", async ({ page }) => {
 
                 await loginPage.submit()
-                await expect(page.locator(".errorMessage")).toContainText("Emai and Password is required")
+                await expect(page.locator(".errorMessage")).toContainText("Email and Password is required")
 
         })
 
